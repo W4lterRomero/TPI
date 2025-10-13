@@ -3,7 +3,7 @@
 use lib\Route;
 use app\controllers\HomeController;
 
-Route::get("/Home", [HomeController::class, "index"]);
+Route::get("/", [HomeController::class, "index"]);
      
 Route::dispatch();
 
