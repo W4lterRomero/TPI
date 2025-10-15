@@ -1,6 +1,7 @@
 <?php  
 
 namespace app\controllers;
+
 class HomeController
 {
     public function view($view, $data = [])
@@ -17,9 +18,27 @@ class HomeController
         else { echo 'No se encontro la vista'; }
     }
 
+    /**
+     * Renderizar vista con plantilla y componentes
+     */
+    public function render($view, $data = [], $titulo = 'SDS2025')
+    {
+        // Extraer datos como variables
+        extract($data);
+        
+        // Capturar el contenido de la vista
+        ob_start();
+        include("../app/views/$view.php");
+        $contenido = ob_get_clean();
+        
+        // Renderizar con plantilla (que incluye header, nav, footer)
+        include("../app/views/components/plantilla.php");
+    }
+
     public function Index()
     {
-        return $this->view('index', ['title' => 'INICIO']);
+        // Usar el nuevo método render con plantilla
+        $this->render('index', ['title' => 'INICIO'], 'SDS2025 - Página Principal');
     }
 }
 

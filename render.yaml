@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: miappmvc
+    env: docker
+    dockerfilePath: ./dockerfile
+    dockerContext: .
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    port: 80
+    healthCheckPath: /
+    envVars:
+      - key: APACHE_DOCUMENT_ROOT
+        value: /var/www/html/public
