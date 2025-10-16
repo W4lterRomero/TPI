@@ -34,7 +34,6 @@ class HomeController
         
         // Renderizar con plantilla (que incluye header, nav, footer)
         include("../app/views/components/plantilla.php");
-        return $contenido;
     }
 
     public function Index()
@@ -45,27 +44,27 @@ class HomeController
     public function dia1()
     {
         // Usar el nuevo método render con plantilla
-        $this->view('dia1', ['title' => 'DIA 1'], 'SDS2025 - Día 1');
+        $this->render('dias/dia1', ['title' => 'DIA 1'], 'SDS2025 - Día 1');
     }
     public function dia2()
     {
         // Usar el nuevo método render con plantilla
-        $this->view('dia2', ['title' => 'DIA 2'], 'SDS2025 - Día 2');
+        $this->render('dias/dia2', ['title' => 'DIA 2'], 'SDS2025 - Día 2');
     }
     public function dia3()
     {
         // Usar el nuevo método render con plantilla
-        $this->view('dia3', ['title' => 'DIA 3'], 'SDS2025 - Día 3');
+        $this->render('dias/dia3', ['title' => 'DIA 3'], 'SDS2025 - Día 3');
     }
     public function dia4()
     {
         // Usar el nuevo método render con plantilla
-        $this->view('dia4', ['title' => 'DIA 4'], 'SDS2025 - Día 4');
+        $this->render('dias/dia4', ['title' => 'DIA 4'], 'SDS2025 - Día 4');
     }
     public function dia5()
     {
         // Usar el nuevo método render con plantilla
-        $this->view('dia5', ['title' => 'DIA 5'], 'SDS2025 - Día 5');
+        $this->render('dias/dia5', ['title' => 'DIA 5'], 'SDS2025 - Día 5');
     }
 }
 

@@ -11,7 +11,7 @@
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-1">
         <!-- Inicio -->
-        <a href="#inicio" class="px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+        <a href="/" class="px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
           Inicio
         </a>
 
