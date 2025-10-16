@@ -1,6 +1,5 @@
-<!-- Página del Autor -->
+
 <div class="min-h-screen bg-gray-50">
-    <!-- Header del autor -->
     <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <div class="w-32 h-32 rounded-full overflow-hidden shadow-2xl mx-auto mb-6">
@@ -15,7 +14,6 @@
     <!-- Contenido principal -->
     <div class="max-w-4xl mx-auto px-4 py-12">
 
-        <!-- Acerca de mí -->
         <div class="mb-12 bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-3">Acerca de Mí</h2>
             
@@ -59,7 +57,7 @@
                     </div>
                 </div>
 
-                <!-- Finanzas -->
+        
                 <div class="text-center">
                     <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,17 +96,6 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-orange-500 pb-3">Proyectos Destacados</h2>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Blog SDS2025</h3>
-                    <p class="text-gray-600 mb-3">
-                        Aplicación web MVC desarrollada con PHP para documentar mi experiencia en la Semana de Sistemas 2025.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">PHP</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">MVC</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Tailwind CSS</span>
-                    </div>
-                </div>
 
                 <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Trading Bot</h3>
@@ -124,7 +111,7 @@
             </div>
         </div>
 
-        <!-- Contacto -->
+
         <div class="bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-purple-500 pb-3">Contacto</h2>
             

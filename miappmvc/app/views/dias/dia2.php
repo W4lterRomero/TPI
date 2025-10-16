@@ -1,10 +1,10 @@
-<!-- Contenido del Día 2 - Martes -->
+
 <div class="min-h-screen bg-gray-50">
-    <!-- Header del día -->
+
     <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Martes</h1>
-            <p class="text-xl md:text-2xl opacity-90">Decisiones Estratégicas en Base a los Datos</p>
+            <p class="text-xl md:text-2xl opacity-90">Día de ponencias</p>
         </div>
     </div>
 
