@@ -1,8 +1,7 @@
 <!-- Página de Error 404 - Días de Lluvia -->
 <div class="min-h-screen bg-gradient-to-b from-gray-400 via-gray-500 to-gray-600 flex items-center justify-center px-4">
     <div class="max-w-2xl mx-auto text-center">
-        
-        <!-- Animación de lluvia con CSS -->
+ 
         <div class="relative mb-8">
             <div class="rain-container">
                 <div class="rain-drop" style="left: 10%; animation-delay: 0s;"></div>
