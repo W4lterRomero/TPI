@@ -66,6 +66,11 @@ class HomeController
         // Usar el nuevo método render con plantilla
         $this->render('dias/dia5', ['title' => 'DIA 5'], 'SDS2025 - Día 5');
     }
+    public function autor()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->render('autor', ['title' => 'AUTOR'], 'SDS2025 - Acerca del Autor');
+    }
 }
 
 

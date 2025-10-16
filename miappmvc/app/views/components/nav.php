@@ -46,8 +46,8 @@
           </div>
         </div>
 
-        <!-- Contacto -->
-        <a href="#contacto" class="px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+        <!-- Autor -->
+        <a href="/autor" class="px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
           Autor
         </a>
       </div>
@@ -97,8 +97,8 @@
           </div>
         </div>
 
-        <a href="#contacto" class="block px-3 py-2 rounded-md hover:bg-blue-800 transition-colors">
-          Contacto
+        <a href="/autor" class="block px-3 py-2 rounded-md hover:bg-blue-800 transition-colors">
+          Autor
         </a>
       </div>
     </div>
