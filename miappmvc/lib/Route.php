@@ -5,7 +5,7 @@ namespace lib;
     {
     
         private static $routes = array();
-        private static $BASE_URL = '/public';
+        private static $BASE_URL = '';
     
         public static function get($uri,$callback)
         {

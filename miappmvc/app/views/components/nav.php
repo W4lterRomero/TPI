@@ -27,19 +27,19 @@
           <!-- Dropdown Menu -->
           <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
             <div class="py-1">
-              <a href="#dia1" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
+              <a href="/dia1" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
                  Día 1 - Lunes
               </a>
-              <a href="#dia2" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
+              <a href="/dia2" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
                  Día 2 - Martes
               </a>
-              <a href="#dia3" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
+              <a href="/dia3" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
                  Día 3 - Miércoles
               </a>
-              <a href="#dia4" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
+              <a href="/dia4" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
                  Día 4 - Jueves
               </a>
-              <a href="#dia5" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
+              <a href="/dia5" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-primary transition-colors">
                  Día 5 - Viernes
               </a>
             </div>
@@ -48,7 +48,7 @@
 
         <!-- Contacto -->
         <a href="#contacto" class="px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-          Contacto
+          Autor
         </a>
       </div>
 

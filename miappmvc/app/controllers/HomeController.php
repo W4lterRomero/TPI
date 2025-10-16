@@ -8,11 +8,12 @@ class HomeController
     {
         extract($data);
 
-        if (file_exists("../app/views/$view.php"))
+        if (file_exists("../app/views/dias/$view.php"))
         {
             ob_start();
-            include("../app/views/$view.php");
+            include("../app/views/dias/$view.php");
             $content = ob_get_clean();
+            include("../app/views/components/plantilla.php");
             return $content;
         }
         else { echo 'No se encontro la vista'; }
@@ -33,12 +34,38 @@ class HomeController
         
         // Renderizar con plantilla (que incluye header, nav, footer)
         include("../app/views/components/plantilla.php");
+        return $contenido;
     }
 
     public function Index()
     {
         // Usar el nuevo método render con plantilla
         $this->render('index', ['title' => 'INICIO'], 'SDS2025 - Página Principal');
+    }
+    public function dia1()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->view('dia1', ['title' => 'DIA 1'], 'SDS2025 - Día 1');
+    }
+    public function dia2()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->view('dia2', ['title' => 'DIA 2'], 'SDS2025 - Día 2');
+    }
+    public function dia3()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->view('dia3', ['title' => 'DIA 3'], 'SDS2025 - Día 3');
+    }
+    public function dia4()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->view('dia4', ['title' => 'DIA 4'], 'SDS2025 - Día 4');
+    }
+    public function dia5()
+    {
+        // Usar el nuevo método render con plantilla
+        $this->view('dia5', ['title' => 'DIA 5'], 'SDS2025 - Día 5');
     }
 }
 
