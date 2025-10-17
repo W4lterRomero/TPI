@@ -13,7 +13,11 @@
         <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-3">Bingo de la Semana de Sistemas</h1>
         <div class="mb-12 bg-white rounded-lg shadow-lg p-6">
             <p class="text-lg text-gray-700 leading-relaxed mb-6">El bingo fue una de las actividades más emocionantes del día viernes y de toda la semana, dicha actividad fué hecha con el programa de unos estudiantes de tercer año que pusieron todo su empeño en ello. Los estudiantes se reunieron para participar en esta tradicional actividad que siempre genera gran expectativa y diversión.</p>
-            
+            <img src="/images/bingo.jpeg" alt="Bingo de la Semana de Sistemas">
+            <br>
+            <br>
+            <video src="/images/video.mp4" controls></video>
+
         </div>
 
         <div class="mb-12 bg-white rounded-lg shadow-lg p-6">
@@ -32,27 +36,19 @@
             </div>
             
             <p class="text-lg text-gray-700 leading-relaxed mb-6">La competencia fue intensa y divertida, donde se pudo ver el espíritu competitivo y colaborativo de los estudiantes de sistemas, combinando tanto habilidades digitales como estrategias tradicionales.</p>
-            <div class="img space-y-4">
-                <img class="w-full max-w-2xl mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" src="/images/torneo.jpeg" alt="Torneo de juegos">
-            </div>
         </div>
 
         <div class="mb-12 bg-white rounded-lg shadow-lg p-6">
             <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-orange-500 pb-3">Fiesta de Clausura en Ibiza Social Club</h1>
             <p class="text-lg text-gray-700 leading-relaxed mb-6">Para cerrar con broche de oro la Semana de Sistemas 2025, se organizó una fiesta de clausura en Ibiza Social Club. Fue la perfecta culminación de una semana llena de aprendizaje, diversión y compañerismo.</p>
             
-           
-            
             <p class="text-lg text-gray-700 leading-relaxed mb-6">La noche estuvo llena de música, baile y mucha diversión. Fue el momento perfecto para relajarse después de una semana intensa de actividades académicas y celebrar todos los logros alcanzados durante la SDS2025.</p>
-            
-            <div class="img space-y-4">
-                <img class="w-full max-w-2xl mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" src="/images/fiesta.jpeg" alt="Fiesta en Ibiza Social Club">
-            </div>
             
             <div class="bg-blue-50 p-4 rounded-lg mt-6">
                 <p class="text-center text-lg font-semibold text-blue-800">
-                    🎊 ¡Así culminó la Semana de Sistemas 2025! Una semana inolvidable llena de aprendizaje, diversión y compañerismo 🎊
+                    ¡Así culminó la Semana de Sistemas 2025! Una semana inolvidable llena de aprendizaje, diversión y compañerismo 
                 </p>
+                <img src="/images/panoramica.jpeg" alt="Panorámica de la Fiesta de Clausura">
             </div>
         </div>
     </div>
