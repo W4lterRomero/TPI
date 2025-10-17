@@ -4,6 +4,7 @@ use lib\Route;
 use app\controllers\HomeController;
 
 Route::get("/", [HomeController::class, "Index"]);
+Route::post("/registrar-visita", [HomeController::class, "registrarVisita"]);
 Route::get("/dia1", [HomeController::class,"dia1"]);
 Route::get("/dia2", [HomeController::class,"dia2"]);
 Route::get("/dia3", [HomeController::class,"dia3"]);

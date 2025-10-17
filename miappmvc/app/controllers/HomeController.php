@@ -1,6 +1,8 @@
 <?php  
 
 namespace app\controllers;
+use app\models\Database;
+use app\models\Visita;
 
 class HomeController
 {
@@ -70,6 +72,80 @@ class HomeController
     {
         // Usar el nuevo método render con plantilla
         $this->render('autor', ['title' => 'AUTOR'], 'SDS2025 - Acerca del Autor');
+    }
+
+    public function registrarVisita()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            try {
+                // Validaciones básicas con regex
+                $nombre = trim($_POST['nombre'] ?? '');
+                $email = trim($_POST['email'] ?? '');
+                $telefono = trim($_POST['telefono'] ?? '');
+                $edad = trim($_POST['edad'] ?? '');
+                $ocupacion = trim($_POST['ocupacion'] ?? '');
+                $comentario = trim($_POST['comentario'] ?? '');
+                
+                // Validar nombre (solo letras y espacios, 2-50 caracteres)
+                if (!preg_match('/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}$/', $nombre)) {
+                    header('Location: /');
+                    exit;
+                }
+                
+                // Validar email
+                if (!preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $email)) {
+                    header('Location: /');
+                    exit;
+                }
+                
+                // Validar teléfono (números, guiones y espacios, 8-15 caracteres)
+                if (!preg_match('/^[0-9\-\s]{8,15}$/', $telefono)) {
+                    header('Location: /');
+                    exit;
+                }
+                
+                // Validar edad (opcional, pero si se envía debe ser 1-120)
+                if (!empty($edad) && !preg_match('/^[1-9][0-9]?$|^1[01][0-9]$|^120$/', $edad)) {
+                    header('Location: /');
+                    exit;
+                }
+                
+                // Crear conexión a base de datos
+                $database = new Database();
+                $conn = $database->getConnection();
+                
+                // Crear instancia del modelo Visita
+                $visita = new Visita($conn);
+                
+                // Asignar datos validados
+                $visita->nombre = $nombre;
+                $visita->email = $email;
+                $visita->telefono = $telefono;
+                $visita->edad = !empty($edad) ? intval($edad) : null;
+                $visita->ocupacion = $ocupacion;
+                $visita->comentario = $comentario;
+                
+                // Crear registro en base de datos
+                if ($visita->create()) {
+                    // Redirigir al inicio sin mensaje
+                    header('Location: /');
+                    exit;
+                } else {
+                    // Redirigir al inicio sin mensaje
+                    header('Location: /');
+                    exit;
+                }
+                
+            } catch (\Exception $e) {
+                // En caso de error, redirigir al inicio sin mensaje
+                header('Location: /');
+                exit;
+            }
+        }
+        
+        // Si no es POST, redirigir a inicio
+        header('Location: /');
+        exit;
     }
 }
 

@@ -25,6 +25,10 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-4">¡Oops! Día Lluvioso</h2>
         </div>
     </div>
+
+    <div>
+        <img src="/images/laselecta.jpeg" alt="">
+    </div>
 </div>
 
 <style>
